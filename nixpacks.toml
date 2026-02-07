@@ -1,3 +1,6 @@
+[variables]
+NIXPACKS_NODE_VERSION = "22.12.0"
+
 [phases.setup]
 nixPkgs = ["nodejs_22"]
 
@@ -8,4 +11,4 @@ cmds = ["npm ci --include=dev"]
 cmds = ["npm run build"]
 
 [start]
-cmd = "npx vite preview --host 0.0.0.0 --port ${PORT:-4173}"
+cmd = "npm run start"
