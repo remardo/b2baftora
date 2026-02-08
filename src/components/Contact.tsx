@@ -1,5 +1,6 @@
 import { FormEvent, useState } from 'react';
 import { FileText, Gift, LoaderCircle, Send } from 'lucide-react';
+import { reachGoal } from '../utils/metrika';
 
 export function Contact() {
   const [name, setName] = useState('');
@@ -48,6 +49,7 @@ export function Contact() {
 
       setIsSuccess(true);
       setResultMessage('Заявка отправлена. Мы свяжемся с вами в ближайшее время.');
+      reachGoal('lead_form_success', { messenger });
       setName('');
       setPhone('');
       setMessenger('email');
@@ -108,7 +110,7 @@ export function Contact() {
 
           <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl">
             <h3 className="text-2xl font-bold mb-6 text-center">Скачать прайс и каталог</h3>
-            <form className="space-y-5" onSubmit={handleSubmit}>
+            <form id="lead-form" data-metrika-goal="lead_form_submit" className="space-y-5" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="lead-name" className="block text-sm font-medium text-gray-700 mb-1">Как вас зовут?</label>
                 <input 
