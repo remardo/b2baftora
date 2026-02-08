@@ -3,7 +3,9 @@ import { motion } from 'framer-motion';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col md:flex-row bg-[#111] text-white pt-20">
+    <section className="relative min-h-screen flex flex-col md:flex-row bg-[#111] text-white pt-20 overflow-hidden">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1615875932822-e78982a53d33?q=80&w=2574&auto=format&fit=crop')] bg-cover bg-center opacity-20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#111] via-[#111]/95 to-[#111]/70" />
       {/* Left Content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-20 py-12 z-10 relative">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#111] via-[#111] to-transparent pointer-events-none md:hidden" />
@@ -20,9 +22,9 @@ export function Hero() {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-bold leading-[1.1] mb-6">
-            ХВАТИТ КОРМИТЬ <br />
+            ХВАТИТ КОРМИТЬ ПЕРЕКУПОВ, <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
-              МОСКОВСКИХ ПЕРЕКУПОВ
+              ПОКУПАЙТЕ ДВЕРИ НАПРЯМУЮ С ФАБРИКИ
             </span>
           </h1>
           
@@ -60,9 +62,9 @@ export function Hero() {
         </motion.div>
       </div>
 
-      {/* Right Visual (Video Placeholder) */}
+      {/* Right Visual */}
       <div className="w-full md:w-1/2 absolute md:relative inset-0 h-full bg-zinc-900 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1615875932822-e78982a53d33?q=80&w=2574&auto=format&fit=crop')] bg-cover bg-center opacity-60 mix-blend-overlay grayscale hover:grayscale-0 transition-all duration-1000 transform hover:scale-105" />
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1615875932822-e78982a53d33?q=80&w=2574&auto=format&fit=crop')] bg-cover bg-center opacity-70 mix-blend-overlay grayscale hover:grayscale-0 transition-all duration-1000 transform hover:scale-105" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent md:bg-gradient-to-l" />
         
         {/* Animated particles or details to simulate activity */}

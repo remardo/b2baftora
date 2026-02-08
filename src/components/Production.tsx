@@ -1,5 +1,3 @@
-import { Play } from 'lucide-react';
-
 export function Production() {
   return (
     <section id="production" className="py-20 bg-[#1a1a1a] text-white">
@@ -15,6 +13,29 @@ export function Production() {
           </p>
         </div>
 
+        <div className="mb-12 rounded-xl overflow-hidden border border-white/10 bg-black">
+          <div className="px-6 py-4 border-b border-white/10 flex items-center justify-between">
+            <h3 className="text-lg font-bold uppercase tracking-wide">Видео с производства</h3>
+            <a
+              href="https://vkvideo.ru/video-199460765_456239280"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-400 text-sm font-bold hover:text-orange-300 transition-colors"
+            >
+              Открыть в VK Видео
+            </a>
+          </div>
+          <div className="aspect-video">
+            <iframe
+              src="https://vk.com/video_ext.php?oid=-199460765&id=456239280&hd=2&autoplay=0"
+              title="Видео производства Афтора"
+              allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
           {/* Main Video/Photo */}
           <div className="col-span-1 md:col-span-2 row-span-2 relative rounded-lg overflow-hidden group">
@@ -23,13 +44,8 @@ export function Production() {
               alt="Цех деревообработки"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <a href="#contacts" className="w-16 h-16 bg-white/10 backdrop-blur rounded-full flex items-center justify-center hover:bg-orange-600 hover:scale-110 transition-all" aria-label="Запросить материалы по производству">
-                <Play className="fill-white text-white ml-1" size={24} />
-              </a>
-            </div>
             <div className="absolute bottom-4 left-4">
-              <span className="bg-orange-600 text-white px-2 py-1 text-xs font-bold uppercase">Видео-экскурсия</span>
+              <span className="bg-orange-600 text-white px-2 py-1 text-xs font-bold uppercase">Участок сборки</span>
             </div>
           </div>
 

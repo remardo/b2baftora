@@ -4,30 +4,27 @@ import { ArrowRight, Box } from 'lucide-react';
 const products = [
   {
     id: 1,
-    name: "Techno-3",
-    style: "Хай-тек",
-    price: "4 200",
-    retail: "7 900",
-    image: "https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?q=80&w=2576&auto=format&fit=crop",
-    specs: ["Экошпон (Германия)", "Царговая сборка", "Толщина 38мм"]
+    name: "Щитовая дверь Афтора L10",
+    style: "Щитовая",
+    image: "https://aftora.com/upload/photo/light/L10%202000_800_sm.png",
+    specs: ["Ширина: 450-900 мм", "Высота: 1700-2300 мм", "ПВХ пленка: 300+ вариантов"],
+    margin: "Маржа дилера до 45%",
   },
   {
     id: 2,
-    name: "Classic-L",
-    style: "Неоклассика",
-    price: "5 100",
-    retail: "9 500",
-    image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=2574&auto=format&fit=crop",
-    specs: ["Soft Touch", "Фрезеровка ЧПУ", "Стекло Lacobel"]
+    name: "Щитовая дверь Афтора X1",
+    style: "Щитовая",
+    image: "https://aftora.com/upload/photo/ht/%D0%A51_sm.png",
+    specs: ["Ширина: 450-900 мм", "Высота: 1700-2300 мм", "Фабричная геометрия полотна"],
+    margin: "Маржа дилера до 45%",
   },
   {
     id: 3,
-    name: "Office-Pro",
-    style: "Офисная",
-    price: "3 800",
-    retail: "6 200",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2301&auto=format&fit=crop",
-    specs: ["Износостойкая пленка", "Усиленный каркас", "Звукоизоляция"]
+    name: "Щитовая дверь Афтора Strong 2",
+    style: "Щитовая",
+    image: "https://aftora.com/upload/photo/strong/s-2_sm.png",
+    specs: ["Ширина: 450-900 мм", "Высота: 1700-2300 мм", "Подходит для массовых объектов"],
+    margin: "Маржа дилера до 45%",
   },
 ];
 
@@ -43,7 +40,7 @@ export function Showcase() {
             <p className="text-gray-500">Модели, которые не залеживаются на складе</p>
           </div>
           <a href="#contacts" className="hidden md:flex items-center gap-2 text-orange-600 font-bold hover:text-orange-700 transition-colors uppercase text-sm tracking-wider">
-            Полный каталог (50+) <ArrowRight size={16} />
+            Полный каталог (300+) <ArrowRight size={16} />
           </a>
         </div>
 
@@ -81,24 +78,13 @@ export function Showcase() {
               </div>
 
               <div className="p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">{product.name}</h3>
-                    <div className="text-xs text-gray-400">Артикул: {product.name.slice(0,3).toUpperCase()}-0{product.id}</div>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-xs text-gray-400 mb-1">Опт от:</div>
-                    <div className="text-2xl font-display font-bold text-[#1a1a1a]">{product.price} ₽</div>
-                  </div>
+                <div className="mb-4">
+                  <h3 className="text-xl font-bold text-gray-900">{product.name}</h3>
+                  <div className="text-xs text-gray-400">Модель {product.id}</div>
                 </div>
-                
-                <div className="flex items-center justify-between border-t border-gray-100 pt-4">
-                  <span className="text-sm text-gray-500">Рек. розница:</span>
-                  <span className="font-bold text-gray-600 line-through decoration-orange-500/50">{product.retail} ₽</span>
-                </div>
-                
-                <div className="mt-2 text-xs text-green-600 font-bold bg-green-50 inline-block px-2 py-1 rounded">
-                  Ваша маржа: {((parseInt(product.retail.replace(' ', '')) - parseInt(product.price.replace(' ', ''))) / parseInt(product.price.replace(' ', '')) * 100).toFixed(0)}%
+
+                <div className="mt-3 text-base text-green-800 font-black bg-green-100 border border-green-300 inline-block px-4 py-2 rounded-md shadow-sm">
+                  {product.margin}
                 </div>
               </div>
             </motion.div>
@@ -107,7 +93,7 @@ export function Showcase() {
 
         <div className="mt-8 text-center md:hidden">
            <a href="#contacts" className="inline-flex items-center gap-2 text-orange-600 font-bold uppercase text-sm tracking-wider">
-            Полный каталог (50+) <ArrowRight size={16} />
+            Полный каталог (300+) <ArrowRight size={16} />
           </a>
         </div>
       </div>
