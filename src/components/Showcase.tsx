@@ -42,7 +42,7 @@ export function Showcase() {
             </h2>
             <p className="text-gray-500">Модели, которые не залеживаются на складе</p>
           </div>
-          <a href="#" className="hidden md:flex items-center gap-2 text-orange-600 font-bold hover:text-orange-700 transition-colors uppercase text-sm tracking-wider">
+          <a href="#contacts" className="hidden md:flex items-center gap-2 text-orange-600 font-bold hover:text-orange-700 transition-colors uppercase text-sm tracking-wider">
             Полный каталог (50+) <ArrowRight size={16} />
           </a>
         </div>
@@ -106,7 +106,7 @@ export function Showcase() {
         </div>
 
         <div className="mt-8 text-center md:hidden">
-           <a href="#" className="inline-flex items-center gap-2 text-orange-600 font-bold uppercase text-sm tracking-wider">
+           <a href="#contacts" className="inline-flex items-center gap-2 text-orange-600 font-bold uppercase text-sm tracking-wider">
             Полный каталог (50+) <ArrowRight size={16} />
           </a>
         </div>

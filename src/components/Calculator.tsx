@@ -43,11 +43,11 @@ export function Calculator() {
 
               <div className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg transform md:translate-x-4 transition-transform">
                 <div className="flex justify-between items-center mb-4">
-                  <span className="font-bold text-gray-400 uppercase tracking-wider text-sm">Схема "ЧебДвери"</span>
+                  <span className="font-bold text-gray-400 uppercase tracking-wider text-sm">Схема "Афтора"</span>
                   <span className="text-green-400 font-bold">Честная цена</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm md:text-base text-white">
-                  <span className="px-3 py-1 bg-white/10 rounded">Завод Чебоксары</span>
+                  <span className="px-3 py-1 bg-white/10 rounded">Фабрика Афтора</span>
                   <ArrowRight size={16} className="text-gray-500" />
                   <div className="flex-1 border-b border-dashed border-gray-600 relative h-1">
                     <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-[10px] text-gray-400 uppercase">Логистика 24ч</span>

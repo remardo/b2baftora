@@ -11,8 +11,8 @@ export function Header() {
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center">
             <span className="text-2xl font-display font-bold text-white tracking-tighter">
-              ЧЕБ<span className="text-orange-500">ДВЕРИ</span>
-              <span className="text-xs text-gray-400 ml-2 font-sans font-normal tracking-wide">ЗАВОД №4</span>
+              АФ<span className="text-orange-500">ТОРА</span>
+              <span className="text-xs text-gray-400 ml-2 font-sans font-normal tracking-wide">ФАБРИКА ДВЕРЕЙ</span>
             </span>
           </div>
           
@@ -22,14 +22,14 @@ export function Header() {
             <a href="#production" className="text-gray-300 hover:text-white transition-colors text-sm uppercase tracking-wider font-medium">Производство</a>
             <a href="#contacts" className="text-gray-300 hover:text-white transition-colors text-sm uppercase tracking-wider font-medium">Контакты</a>
             
-            <button className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-sm font-bold hover:bg-gray-200 transition-colors uppercase text-sm">
+            <a href="tel:+78352600460" className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-sm font-bold hover:bg-gray-200 transition-colors uppercase text-sm">
               <Phone size={16} />
-              <span>Заказать звонок</span>
-            </button>
+              <span>8 (8352) 600-460</span>
+            </a>
           </div>
 
           <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-white p-2">
+            <button onClick={() => setIsOpen(!isOpen)} className="text-white p-2" aria-label="Открыть меню">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -49,10 +49,10 @@ export function Header() {
               <a href="#products" className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-md" onClick={() => setIsOpen(false)}>Каталог</a>
               <a href="#production" className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-md" onClick={() => setIsOpen(false)}>Производство</a>
               <a href="#contacts" className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-md" onClick={() => setIsOpen(false)}>Контакты</a>
-              <button className="w-full mt-4 flex items-center justify-center gap-2 bg-orange-600 text-white px-4 py-3 rounded-sm font-bold uppercase">
+              <a href="#contacts" className="w-full mt-4 flex items-center justify-center gap-2 bg-orange-600 text-white px-4 py-3 rounded-sm font-bold uppercase" onClick={() => setIsOpen(false)}>
                 <FileText size={18} />
                 <span>Скачать прайс</span>
-              </button>
+              </a>
             </div>
           </motion.div>
         )}

@@ -24,9 +24,9 @@ export function Production() {
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <button className="w-16 h-16 bg-white/10 backdrop-blur rounded-full flex items-center justify-center hover:bg-orange-600 hover:scale-110 transition-all">
+              <a href="#contacts" className="w-16 h-16 bg-white/10 backdrop-blur rounded-full flex items-center justify-center hover:bg-orange-600 hover:scale-110 transition-all" aria-label="Запросить материалы по производству">
                 <Play className="fill-white text-white ml-1" size={24} />
-              </button>
+              </a>
             </div>
             <div className="absolute bottom-4 left-4">
               <span className="bg-orange-600 text-white px-2 py-1 text-xs font-bold uppercase">Видео-экскурсия</span>

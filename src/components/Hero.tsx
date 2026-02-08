@@ -27,18 +27,18 @@ export function Hero() {
           </h1>
           
           <p className="text-lg text-gray-400 mb-8 max-w-lg leading-relaxed">
-            Межкомнатные двери оптом напрямую с линии в Чебоксарах. 
-            Обеспечим вашу маржинальность до <span className="text-white font-bold">45%</span> за счет отсутствия посредников и наценки за бренд.
+            Фабрика дверей «Афтора» производит межкомнатные двери (щитовые и сборные в ПВХ пленке),
+            скрытые двери, панели и рейки для оформления порталов.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <button className="flex items-center justify-center gap-3 bg-orange-600 text-white px-8 py-4 rounded-sm font-bold hover:bg-orange-700 transition-all uppercase tracking-wide group">
+            <a href="#contacts" className="flex items-center justify-center gap-3 bg-orange-600 text-white px-8 py-4 rounded-sm font-bold hover:bg-orange-700 transition-all uppercase tracking-wide group">
               <Download className="group-hover:translate-y-1 transition-transform" size={20} />
               <span>Скачать прайс (PDF)</span>
-            </button>
-            <button className="flex items-center justify-center gap-3 border border-white/20 text-white px-8 py-4 rounded-sm font-bold hover:bg-white/5 transition-all uppercase tracking-wide">
+            </a>
+            <a href="#calculator" className="flex items-center justify-center gap-3 border border-white/20 text-white px-8 py-4 rounded-sm font-bold hover:bg-white/5 transition-all uppercase tracking-wide">
               <span>Рассчитать выгоду</span>
-            </button>
+            </a>
           </div>
 
           <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-8">
