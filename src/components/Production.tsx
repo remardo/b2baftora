@@ -36,47 +36,47 @@ export function Production() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:grid-rows-2 md:h-[600px]">
           {/* Main Video/Photo */}
-          <div className="col-span-1 md:col-span-2 row-span-2 relative rounded-lg overflow-hidden group">
+          <div className="relative rounded-lg overflow-hidden group h-56 md:h-auto md:col-span-2 md:row-span-2">
             <img 
               src="/proizvodstvo_aftora.jpg" 
               alt="Цех деревообработки"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
             />
             <div className="absolute bottom-4 left-4">
-              <span className="bg-orange-600 text-white px-2 py-1 text-xs font-bold uppercase">Участок сборки</span>
+              <span className="bg-orange-600 text-white px-2 py-1 text-xs font-bold uppercase">Цех</span>
             </div>
           </div>
 
           {/* Photo 2 */}
-          <div className="col-span-1 md:col-span-1 row-span-1 relative rounded-lg overflow-hidden group">
+          <div className="relative rounded-lg overflow-hidden group h-44 md:h-auto md:col-span-1 md:row-span-1">
             <img 
               src="/sklad_aftora.jpg" 
               alt="Склад"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
             />
             <div className="absolute bottom-4 left-4">
-              <p className="font-bold text-sm">Склад сырья</p>
-              <p className="text-xs text-gray-400">Запас на 3 месяца</p>
+              <p className="font-bold text-sm">Склад готовой продукции</p>
+              <p className="text-xs text-gray-400">Комплектация и отгрузка за 24 часа</p>
             </div>
           </div>
 
           {/* Photo 3 */}
-          <div className="col-span-1 md:col-span-1 row-span-1 relative rounded-lg overflow-hidden group">
+          <div className="relative rounded-lg overflow-hidden group h-44 md:h-auto md:col-span-1 md:row-span-1">
             <img 
               src="/chpu_aftora.jpg" 
               alt="Контроль качества"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
             />
             <div className="absolute bottom-4 left-4">
-              <p className="font-bold text-sm">Зона ОТК</p>
+              <p className="font-bold text-sm">Работа ЧПУ</p>
               <p className="text-xs text-gray-400">Проверка геометрии</p>
             </div>
           </div>
 
           {/* Quote Block */}
-          <div className="col-span-1 md:col-span-2 row-span-1 bg-[#222] p-8 rounded-lg flex items-center relative overflow-hidden">
+          <div className="bg-[#222] p-8 rounded-lg flex items-center relative overflow-hidden min-h-56 md:min-h-0 md:col-span-2 md:row-span-1">
             <div className="absolute right-0 bottom-0 opacity-10">
                <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
