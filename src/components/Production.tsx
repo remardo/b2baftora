@@ -40,7 +40,7 @@ export function Production() {
           {/* Main Video/Photo */}
           <div className="col-span-1 md:col-span-2 row-span-2 relative rounded-lg overflow-hidden group">
             <img 
-              src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2670&auto=format&fit=crop" 
+              src="/proizvodstvo_aftora.jpg" 
               alt="Цех деревообработки"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
             />
@@ -52,7 +52,7 @@ export function Production() {
           {/* Photo 2 */}
           <div className="col-span-1 md:col-span-1 row-span-1 relative rounded-lg overflow-hidden group">
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2670&auto=format&fit=crop" 
+              src="/sklad_aftora.jpg" 
               alt="Склад"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
             />
@@ -65,7 +65,7 @@ export function Production() {
           {/* Photo 3 */}
           <div className="col-span-1 md:col-span-1 row-span-1 relative rounded-lg overflow-hidden group">
             <img 
-              src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=2669&auto=format&fit=crop" 
+              src="/chpu_aftora.jpg" 
               alt="Контроль качества"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
             />
@@ -89,7 +89,7 @@ export function Production() {
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-gray-600 rounded-full overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop" className="w-full h-full object-cover" alt="Director" />
+                  <img src="/kollektiv_aftora.jpg" className="w-full h-full object-cover" alt="Команда Афтора" />
                 </div>
                 <div>
                   <div className="font-bold text-white text-sm">Алексей Петров</div>

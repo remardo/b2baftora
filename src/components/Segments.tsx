@@ -78,7 +78,7 @@ export function Segments() {
                   </ul>
                 </div>
                 <div className="rounded-xl overflow-hidden h-64 md:h-80 shadow-lg">
-                  <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=2670&auto=format&fit=crop" alt="Showroom" className="w-full h-full object-cover" />
+                  <img src="/magazin_aftora.jpg" alt="Шоурум дилера" className="w-full h-full object-cover" />
                 </div>
               </motion.div>
             ) : (
@@ -116,7 +116,7 @@ export function Segments() {
                   </ul>
                 </div>
                 <div className="rounded-xl overflow-hidden h-64 md:h-80 shadow-lg">
-                  <img src="https://images.unsplash.com/photo-1590333203407-c5332f7a6375?q=80&w=2673&auto=format&fit=crop" alt="Construction site" className="w-full h-full object-cover" />
+                  <img src="/office_aftora.jpg" alt="Офисный объект" className="w-full h-full object-cover" />
                 </div>
               </motion.div>
             )}

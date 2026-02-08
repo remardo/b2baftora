@@ -8,7 +8,10 @@ nixPkgs = ["nodejs_22"]
 cmds = ["npm ci --include=dev"]
 
 [phases.build]
-cmds = ["npm run build"]
+cmds = [
+  "if [ -z \"$VITE_TG_BOT_TOKEN\" ] || [ -z \"$VITE_TG_CHAT_ID\" ]; then echo 'WARNING: VITE_TG_BOT_TOKEN or VITE_TG_CHAT_ID is missing during build'; fi",
+  "VITE_TG_BOT_TOKEN=\"$VITE_TG_BOT_TOKEN\" VITE_TG_CHAT_ID=\"$VITE_TG_CHAT_ID\" npm run build"
+]
 
 [start]
 cmd = "npm run start"
