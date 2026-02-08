@@ -8,7 +8,7 @@ const products = [
     style: "Щитовая",
     image: "https://aftora.com/upload/photo/light/L10%202000_800_sm.png",
     specs: ["Ширина: 450-900 мм", "Высота: 1700-2300 мм", "ПВХ пленка: 300+ вариантов"],
-    margin: "Маржа дилера до 45%",
+    margin: "Маржа дилера до 56%",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const products = [
     style: "Щитовая",
     image: "https://aftora.com/upload/photo/ht/%D0%A51_sm.png",
     specs: ["Ширина: 450-900 мм", "Высота: 1700-2300 мм", "Фабричная геометрия полотна"],
-    margin: "Маржа дилера до 45%",
+    margin: "Маржа дилера до 87%",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const products = [
     style: "Щитовая",
     image: "https://aftora.com/upload/photo/strong/s-2_sm.png",
     specs: ["Ширина: 450-900 мм", "Высота: 1700-2300 мм", "Подходит для массовых объектов"],
-    margin: "Маржа дилера до 45%",
+    margin: "Маржа дилера до 71%",
   },
 ];
 
@@ -52,10 +52,10 @@ export function Showcase() {
               className="group relative bg-white rounded-xl border border-gray-100 shadow-lg hover:shadow-xl transition-all overflow-hidden"
             >
               <div className="aspect-[3/4] overflow-hidden bg-gray-100 relative">
-                <img 
+                <img
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 text-xs font-bold uppercase tracking-wider text-gray-800 rounded-sm">
                   {product.style}
