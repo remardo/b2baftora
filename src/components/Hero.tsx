@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col md:flex-row bg-[#111] text-white pt-20 overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/aftora_hero.jpg')] bg-cover bg-center opacity-20" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#111] via-[#111]/95 to-[#111]/70" />
+      <div className="absolute inset-0 bg-[url('/aftora_hero.jpg')] bg-cover bg-center opacity-45" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/20" />
       {/* Left Content */}
       <div className="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-20 py-12 z-10 relative">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#111] via-[#111] to-transparent pointer-events-none md:hidden" />
@@ -63,9 +63,9 @@ export function Hero() {
       </div>
 
       {/* Right Visual */}
-      <div className="w-full md:w-1/2 absolute md:relative inset-0 h-full bg-zinc-900 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/aftora_hero.jpg')] bg-cover bg-center opacity-70 mix-blend-overlay grayscale hover:grayscale-0 transition-all duration-1000 transform hover:scale-105" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent md:bg-gradient-to-l" />
+      <div className="w-full md:w-1/2 absolute md:relative inset-0 h-full overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/aftora_hero.jpg')] bg-cover bg-center opacity-90 transition-all duration-1000 transform hover:scale-105" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent md:bg-gradient-to-l md:from-black/30 md:to-transparent" />
         
         {/* Animated particles or details to simulate activity */}
         <div className="absolute bottom-10 right-10 hidden md:block">
