@@ -21,11 +21,11 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-orange-500" />
-                <a href="tel:+78352600460" className="hover:text-white transition-colors">8 (8352) 600-460</a>
+                <a href="tel:+79373910382" className="hover:text-white transition-colors">+7 937 391 0382</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} className="text-orange-500" />
-                <a href="mailto:aftora@yandex.ru" className="hover:text-white transition-colors">aftora@yandex.ru</a>
+                <a href="mailto:aftora@inbox.ru" className="hover:text-white transition-colors">aftora@inbox.ru</a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="text-orange-500 mt-1" />

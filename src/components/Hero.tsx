@@ -22,7 +22,6 @@ export function Hero() {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-bold leading-[1.1] mb-6">
-            ХВАТИТ КОРМИТЬ ПЕРЕКУПОВ, <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
               ПОКУПАЙТЕ ДВЕРИ НАПРЯМУЮ С ФАБРИКИ
             </span>

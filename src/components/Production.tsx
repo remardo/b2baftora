@@ -87,17 +87,20 @@ export function Production() {
               <p className="text-lg italic text-gray-300 mb-4">
                 Мы не делаем "дизайнерские шедевры" для выставок. Мы делаем "рабочих лошадок", которые приносят вам деньги каждый день. Качество стабильное, как бетон.
               </p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gray-600 rounded-full overflow-hidden">
-                  <img src="/kollektiv_aftora.jpg" className="w-full h-full object-cover" alt="Команда Афтора" />
-                </div>
-                <div>
-                  <div className="font-bold text-white text-sm">Алексей Петров</div>
-                  <div className="text-xs text-gray-500">Директор производства</div>
-                </div>
+              <div>
+                <div className="font-bold text-white text-sm">Валерий Мартынов</div>
+                <div className="text-xs text-gray-500">Начальник производства</div>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="mt-8 rounded-xl overflow-hidden border border-white/10 bg-[#191919]">
+          <img
+            src="/kollektiv_aftora.jpg"
+            alt="Сотрудники фабрики Афтора"
+            className="w-full h-auto"
+          />
         </div>
       </div>
     </section>

@@ -19,7 +19,7 @@ export function Contact() {
 
     if (!botToken || !chatId) {
       setIsSuccess(false);
-      setResultMessage('Интеграция временно недоступна. Позвоните: 8 (8352) 600-460 или напишите на aftora@yandex.ru.');
+      setResultMessage('Интеграция временно недоступна. Позвоните: +7 937 391 0382 или напишите на aftora@inbox.ru.');
       return;
     }
 
@@ -55,7 +55,7 @@ export function Contact() {
       setMessenger('email');
     } catch {
       setIsSuccess(false);
-      setResultMessage('Не удалось отправить заявку. Позвоните: 8 (8352) 600-460 или напишите на aftora@yandex.ru.');
+      setResultMessage('Не удалось отправить заявку. Позвоните: +7 937 391 0382 или напишите на aftora@inbox.ru.');
     } finally {
       setIsSubmitting(false);
     }
@@ -133,7 +133,7 @@ export function Contact() {
                   onChange={(e) => setPhone(e.target.value)}
                   required
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all"
-                  placeholder="+7 (8352) 600-460" 
+                  placeholder="+7 937 391 0382" 
                 />
               </div>
 

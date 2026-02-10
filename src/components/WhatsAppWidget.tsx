@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export function WhatsAppWidget() {
   return (
     <motion.a
-      href="tel:+78352600460"
+      href="tel:+79373910382"
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{ delay: 2, type: "spring" }}

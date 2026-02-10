@@ -22,9 +22,9 @@ export function Header() {
             <a href="#production" className="text-gray-300 hover:text-white transition-colors text-sm uppercase tracking-wider font-medium">Производство</a>
             <a href="#contacts" className="text-gray-300 hover:text-white transition-colors text-sm uppercase tracking-wider font-medium">Контакты</a>
             
-            <a href="tel:+78352600460" className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-sm font-bold hover:bg-gray-200 transition-colors uppercase text-sm">
+            <a href="tel:+79373910382" className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-sm font-bold hover:bg-gray-200 transition-colors uppercase text-sm">
               <Phone size={16} />
-              <span>8 (8352) 600-460</span>
+              <span>+7 937 391 0382</span>
             </a>
           </div>
 
