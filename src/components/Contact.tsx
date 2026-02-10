@@ -79,7 +79,7 @@ export function Contact() {
             <div className="bg-white/5 p-6 rounded-lg border border-white/10 mb-8">
               <h4 className="font-bold text-orange-500 mb-4 flex items-center gap-2">
                 <FileText size={20} />
-                Что внутри архива (ZIP, 45Mb):
+                Что внутри архива:
               </h4>
               <ul className="space-y-3 text-sm text-gray-300">
                 <li className="flex items-center gap-2">
@@ -125,7 +125,7 @@ export function Contact() {
               </div>
               
               <div>
-                <label htmlFor="lead-phone" className="block text-sm font-medium text-gray-700 mb-1">Телефон</label>
+                <label htmlFor="lead-phone" className="block text-sm font-medium text-gray-700 mb-1">Телефон / Email</label>
                 <input 
                   id="lead-phone"
                   type="tel" 
@@ -133,7 +133,7 @@ export function Contact() {
                   onChange={(e) => setPhone(e.target.value)}
                   required
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all"
-                  placeholder="+7 937 391 0382" 
+                  placeholder="+7 937 391 0382 или email@domain.ru" 
                 />
               </div>
 
